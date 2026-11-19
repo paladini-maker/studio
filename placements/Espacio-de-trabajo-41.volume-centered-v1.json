@@ -1,0 +1,163 @@
+{
+  "format": "forma3d-marker-placement-v1",
+  "model": "Espacio-de-trabajo-41.glb",
+  "modelHeightM": 1.9029,
+  "midlineX": 0.0005,
+  "exportedAt": "2026-11-19",
+  "method": "Volume-centered v1: rigify-v1 base + 10 anatomically-verified moves to true local volume/tube centers. Limb tubes: median of 5-sample DoubleSide opposing-pair midpoints per axis (12mm sample square, both-walls-required, width caps limb 160mm), multiple axes (X+Z where valid), gap/miss/asymmetric rejection, 4mm deadband. Waist: lumbar vertebral (dorsal abdominal wall +40mm, X symmetric torso walls), gap rejection (rig in lordosis gap). Column/shoulders/hips-femoral/head-neck/clavicles preserved (midline/vertebral/junction anatomy; centroid rejected where hair/arms/gap would bias). Y never touched (Rigify axial heights preserved). Surface markers untouched: headTop (crown), leftFoot/rightFoot (toe tips). Mirroring OFF (right arm +40mm lateral asymmetry preserved).",
+  "centerMethod": "BVH (three-mesh-bvh 0.9.2) DoubleSide raycasts vs original 691k-tri mesh in root-local meters (uint16*scale+translation, Y grounded): 4 XZ axes (X/Z/D45/D135) x5 origins (center/+Y/-Y/+perp/-perp 6mm) =40 rays/marker, width caps limb160/shoulder-hip250/column500/head-neck300, thin-flake (<10mm) + edge-graze (<2mm vs >40mm) rejection, per-axis median then overall median for proposal, anatomical classification override (vertebral/junction/midline) where centroid would be wrong. Verified island tube positions show symmetric walls (e.g. knee 55/54 +60/59) vs rig gap (4mm wall +Z miss); waist island X 118/87 +Z front123/dorsal45 vertebral vs rig X+ miss +gap Z.",
+  "baseRecipe": "Espacio-de-trabajo-41.rigify-v1.json",
+  "tubeSource": "Espacio-de-trabajo-41.island-fit-v1.json (BVH tube scans scratch/measure-tubes.json, tubes-table.txt) + fresh BVH verification scratch/marker-volumetric.json, probe6.json, compare-waist-legs.json",
+  "markers": {
+    "chest": [
+      0.0005,
+      1.409,
+      0.0441
+    ],
+    "head": [
+      0.005,
+      1.635,
+      -0.0292
+    ],
+    "headTop": [
+      0.005,
+      1.9,
+      -0.045
+    ],
+    "hips": [
+      0.0005,
+      0.9708,
+      0.0064
+    ],
+    "jaw": [
+      0.005,
+      1.63,
+      -0.0312
+    ],
+    "leftAnkle": [
+      -0.095,
+      0.1047,
+      -0.029
+    ],
+    "leftClavicle": [
+      -0.0176,
+      1.543,
+      -0.0275
+    ],
+    "leftElbow": [
+      -0.1543,
+      1.252,
+      -0.0453
+    ],
+    "leftFoot": [
+      -0.0433,
+      0.025,
+      0.08
+    ],
+    "leftHand": [
+      -0.228,
+      0.9285,
+      -0.0194
+    ],
+    "leftHip": [
+      -0.092,
+      0.98,
+      -0.012
+    ],
+    "leftKnee": [
+      -0.11,
+      0.5233,
+      -0.028
+    ],
+    "leftMidFoot": [
+      -0.08,
+      0.0666,
+      0.027
+    ],
+    "leftShoulder": [
+      -0.14,
+      1.523,
+      -0.0579
+    ],
+    "leftWrist": [
+      -0.205,
+      1.0237,
+      -0.035
+    ],
+    "neck": [
+      0.003,
+      1.5941,
+      -0.0653
+    ],
+    "pelvis": [
+      0.0005,
+      1.045,
+      -0.045
+    ],
+    "rightAnkle": [
+      0.081,
+      0.1047,
+      -0.019
+    ],
+    "rightClavicle": [
+      0.0176,
+      1.543,
+      -0.0235
+    ],
+    "rightElbow": [
+      0.204,
+      1.252,
+      -0.03
+    ],
+    "rightFoot": [
+      0.0433,
+      0.025,
+      0.08
+    ],
+    "rightHand": [
+      0.243,
+      0.9285,
+      0
+    ],
+    "rightHip": [
+      0.092,
+      0.98,
+      -0.012
+    ],
+    "rightKnee": [
+      0.089,
+      0.5233,
+      -0.013
+    ],
+    "rightMidFoot": [
+      0.069,
+      0.0666,
+      0.027
+    ],
+    "rightShoulder": [
+      0.14,
+      1.523,
+      -0.0283
+    ],
+    "rightWrist": [
+      0.238,
+      1.0237,
+      -0.013
+    ],
+    "spine": [
+      0.0005,
+      1.1125,
+      -0.03
+    ],
+    "upperChest": [
+      0.0005,
+      1.52,
+      -0.012
+    ],
+    "waist": [
+      0.0005,
+      1.2429,
+      0.035
+    ]
+  }
+}

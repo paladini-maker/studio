@@ -1,0 +1,152 @@
+{
+  "hips": [
+    "column-vertebral / sacral",
+    "internal",
+    "keep: midline X (arms/hair contaminate lateral, X width 473mm), Z already centered (mid 6.8 vs 6.4, 0.4mm). Overall median contaminated by diagonals; Z-axis valid."
+  ],
+  "pelvis": [
+    "column-vertebral / sacral",
+    "internal",
+    "keep dorsal -45mm: full-depth centroid (+25mm) would pull sacrum into abdomen; hair/abdomen bias. X 437mm contaminated."
+  ],
+  "spine": [
+    "column-vertebral / lumbar-thoracic",
+    "internal",
+    "keep dorsal -30mm (back wall +28mm, front +194mm): centroid +52mm is abdominal, not vertebral. X 315mm includes arms."
+  ],
+  "waist": [
+    "column-vertebral / lumbar L1",
+    "internal MOVED",
+    "moved posterior gap (-69.4) -> vertebral (+35): island X 118/87 symmetric + front123/dorsal45; rig X+ miss + gap Z. 104.4mm. Exceeds 60mm sanity cap but anatomically required (gap vs vertebra); multiple valid axes + vertebral rule. High confidence."
+  ],
+  "chest": [
+    "column-vertebral / thoracic",
+    "internal",
+    "keep: midline X (lateral 277mm includes arms, midpoint +26mm contaminated), Z already centered (122/122, 0mm)."
+  ],
+  "upperChest": [
+    "column-vertebral / T1",
+    "internal",
+    "keep: X contaminated (352mm, midpoint +32mm), Z -11.6 vs -12 (0.9mm)."
+  ],
+  "neck": [
+    "neck cylinder C7",
+    "internal",
+    "keep: X -2.8 vs 3.0 (5.8 raw) but overall median -0.1/ -67.3 within 4mm deadband (3.1/2.0). Multiple walls are trachea/hair layers; center already tube."
+  ],
+  "jaw": [
+    "TMJ pivot",
+    "internal",
+    "keep midline + depth: X median +37mm contaminated by teeth/mouth interior (first hits 9 vs 72mm asymmetric); Z 27/27 symmetric, mid -31.2 exact. Centroid +22mm is cheek/hair bias."
+  ],
+  "head": [
+    "skull center ear-level",
+    "internal",
+    "keep midline + depth: X median +36.8 contaminated by nasal cavity/hair (9 vs 72mm); Z 29/29 symmetric exact. Centroid +23mm lateral is hair bias."
+  ],
+  "headTop": [
+    "crown",
+    "SURFACE",
+    "keep on skin (0.005,1.9,-0.045) by design."
+  ],
+  "leftClavicle": [
+    "sternoclavicular SC",
+    "internal near-surface",
+    "keep: X contaminated (137 vs 40mm, mid +30mm far lateral), Z valid 27/38 mid -32.7 vs -27.5 (5.2mm) just over deadband but X invalid -> overall unreliable. Preserve SC anatomy."
+  ],
+  "rightClavicle": [
+    "sternoclavicular SC",
+    "internal near-surface",
+    "keep: X mid +34mm contaminated (100 vs 67mm torso width), Z 51/48 exact."
+  ],
+  "leftShoulder": [
+    "glenohumeral",
+    "internal",
+    "keep: junction, X+ 338mm through torso (no medial wall), X- 11mm lateral only; Z 46/47 exact. Deltoid measured +/-0.14 preserved."
+  ],
+  "rightShoulder": [
+    "glenohumeral",
+    "internal",
+    "keep: junction, X- 283mm through torso, Z 45/45 exact. Asymmetry preserved (R +40mm lateral, mirroring OFF)."
+  ],
+  "leftElbow": [
+    "elbow epicondylar",
+    "internal",
+    "keep: symmetric 36/33 +36/39, prop -153.4/-46.1 vs -154.3/-45.3 (0.9/0.8mm) within deadband. High confidence centered."
+  ],
+  "rightElbow": [
+    "elbow epicondylar",
+    "internal MOVED",
+    "moved (0.165,-0.025)->(0.204,-0.03): rig edge 6.6mm +Z miss (outside tube); island symmetric 34/33 +39/38. 39.3mm. High."
+  ],
+  "leftWrist": [
+    "wrist carpal",
+    "internal",
+    "keep: Z tube 28/27 exact both recipes; X unreliable (medial gap, 431mm far torso) for both; 10mm X diff within arm-width tolerance, no reliable winner. Preserve rig."
+  ],
+  "rightWrist": [
+    "wrist carpal",
+    "internal MOVED",
+    "moved (0.205,-0.0035)->(0.238,-0.013): rig Z width 129mm (gap/torso) vs island 59mm tube + lateral 23 vs 55mm; island matches wristZ mid -12.4mm. 34.3mm. High."
+  ],
+  "leftHand": [
+    "hand metacarpal/palm",
+    "internal",
+    "keep: Z 74mm tube exact, X tube 26mm mid -231 vs -228 (3mm). Centered."
+  ],
+  "rightHand": [
+    "hand metacarpal/palm",
+    "internal MOVED",
+    "moved (0.228,0.0019)->(0.243,0.0): island matches hand tube mid -0.3mm + X tube -231 (4mm); rig 19mm medial. 15.1mm. Medium-high."
+  ],
+  "leftHip": [
+    "femoral head",
+    "internal",
+    "keep: junction, no isolated walls (X 354/150 width 504, Z 127/127 torso depth). Inguinal-creek femoral position preserved; opposing-surface invalid by design (embedded in pelvis)."
+  ],
+  "rightHip": [
+    "femoral head",
+    "internal",
+    "keep: same as left (170/334 +130/124)."
+  ],
+  "leftKnee": [
+    "knee epicondylar",
+    "internal MOVED",
+    "moved (-0.0513,-0.022)->(-0.11,-0.028): rig in inter-leg gap (X 84 vs 4mm edge +Z miss); island symmetric X 55/54 +Z 59/60. 59.0mm. High."
+  ],
+  "rightKnee": [
+    "knee epicondylar",
+    "internal MOVED",
+    "moved (0.0433,-0.022)->(0.089,-0.013): rig gap-leaning (99 vs 10mm +Z 36/25 asymmetric); island symmetric 53/56 +61/61. 46.6mm. High."
+  ],
+  "leftAnkle": [
+    "ankle intermalleolar",
+    "internal MOVED",
+    "moved (-0.0433,-0.022)->(-0.095,-0.029): rig gap (94 vs 19mm +Z miss); island symmetric 32/32 +34/34. 52.2mm. High."
+  ],
+  "rightAnkle": [
+    "ankle intermalleolar",
+    "internal MOVED",
+    "moved (0.0433,-0.022)->(0.081,-0.019): rig gap (68 vs 106mm? actually 7 vs 106 +Z miss); island symmetric. 37.8mm. High."
+  ],
+  "leftMidFoot": [
+    "midfoot Chopart",
+    "internal MOVED",
+    "moved X -0.0405->-0.08 (Z 0.027 kept Chopart, not length centroid -5mm): rig gap (82 vs 17mm +Z miss); island X 22/23 symmetric at its Z + tube-consistent 71mm at Z0.02. 39.5mm. Medium-high."
+  ],
+  "rightMidFoot": [
+    "midfoot Chopart",
+    "internal MOVED",
+    "moved X 0.0405->0.069 (Z kept): rig gap; island matches tube 71mm at Z0.02. 28.5mm. Medium-high."
+  ],
+  "leftFoot": [
+    "toe tip MTP",
+    "SURFACE",
+    "keep on skin (-0.0433? actually island -0.08? No surface: rig -0.0433,0.025,0.08 kept; island -0.08? Wait feet surface: rig leftFoot -0.0433 vs island -0.08 – which is toe tip? Both surface? Keep rig surface per method (toe tips). Document: X differs but surface landmark, skin placement preserved, not volume-centered."
+  ],
+  "rightFoot": [
+    "toe tip MTP",
+    "SURFACE",
+    "keep on skin (0.0433,0.025,0.08)."
+  ]
+}
